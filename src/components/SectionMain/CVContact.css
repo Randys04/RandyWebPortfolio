@@ -1,0 +1,92 @@
+@import 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap';
+
+.contact-btn {
+	background-color: white;
+	--color: #00001e;
+	display: inline-block;
+	width: 10em;
+	height: 2.6em;
+	line-height: 2.5em;
+	overflow: hidden;
+	margin: 20px;
+	font-size: 17px;
+	font-family: "Raleway", sans-serif;
+	z-index: 1;
+	color: var(--color);
+	border: none ;
+	position: relative;
+}
+
+.contact-btn::before {
+	position: absolute;
+	content: "";
+	background: var(--color);
+	width: 240px;
+	height: 180px;
+	z-index: -1;
+	border-radius: 50%;
+}
+
+.contact-btn:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.contact-btn:before {
+	top: 100%;
+	left: 100%;
+	transition: .3s all;
+}
+
+.contact-btn:hover::before {
+	top: -30px;
+	left: -30px;
+}
+
+
+
+.cv-btn {
+	
+	--color: #00001e;
+	background-color: var(--color);
+	font-family: inherit;
+	display: inline-block;
+	width: 10em;
+	height: 2.6em;
+	line-height: 2.5em;
+	overflow: hidden;
+	margin: 20px;
+	font-size: 17px;
+	font-family: "Raleway", sans-serif;
+	z-index: 1;
+	color: white;
+	border: none;
+	position: relative;
+}
+
+.cv-btn::before {
+	position: absolute;
+	content: "";
+	background: white;
+	width: 240px;
+	height: 180px;
+	z-index: -1;
+	font-family: "Raleway", sans-serif;
+	border-radius: 50%;
+}
+
+.cv-btn:hover {
+	color:  #00001e;
+	cursor: pointer;
+}
+
+.cv-btn:before {
+	top: 100%;
+	left: 100%;
+	transition: .3s all;
+}
+
+.cv-btn:hover::before {
+	top: -30px;
+	left: -30px;
+}
