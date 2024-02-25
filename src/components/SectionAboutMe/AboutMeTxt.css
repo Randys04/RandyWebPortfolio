@@ -1,0 +1,89 @@
+@import 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap';
+
+.about-me-div-main{
+  width: 480px;
+  background-color: #0c153f;
+  border-radius: 2px;
+  padding: 20px;
+  box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+
+}
+
+.my-description{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hello-about-me{
+  margin: 0 0 10px 0;
+  padding: 0 5px 0 5px;
+
+  border-radius: 2px;
+
+  background-color: #243f80;
+
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+.my-name{
+  font-weight: 700;
+
+  
+}
+
+.i-am-text{
+  margin: 0;
+  padding: 0;
+
+  font-weight: 100;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  font-size: 14px;
+
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+
+.contact-btns-main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-btns{
+  background-color: #243f80;
+  
+  border-radius: 2px;
+
+  display: flex;
+  justify-content: space-between;
+  
+  width: 65%;
+
+  margin: 30px 0 0 0;
+  padding: 10px 10px 10px 10px;
+
+  box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+}
+
+@media (max-width: 580px){
+  .about-me-div-main{
+    width: 85%;
+  }
+  .hello-about-me{
+    font-size: 14px;
+  }
+  .i-am-text{
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .contact-btns{
+    padding: 5px 8px;
+  }
+}
