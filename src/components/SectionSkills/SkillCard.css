@@ -1,0 +1,53 @@
+@import 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap';
+
+.skill-card-main{
+  width: 200px;
+  height: 54px;
+  background-color: #243f80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+
+  box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+}
+
+.skill-img{
+  height: 28px;
+}
+
+.skill-divider{
+  background-color: white;
+  height: 50%;
+  width: 2px;
+  margin: 0 10px;
+  border-radius: 100px;
+}
+
+.skill-name{
+  background-color: #0c153f;
+  padding: 2px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+@media (max-width: 620px){
+  .skill-card-main{
+    width: 150px;
+    height: 44px;
+  }
+  .skill-img{
+    height: 20px;
+  }
+  .skill-name{
+    font-size: 11px;
+  }
+
+}
