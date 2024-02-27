@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import { Navbar } from './components/Navbar/Navbar.jsx'
+
 import { SectionMain } from './components/SectionMain/SectionMain.jsx'
 import { Text } from './components/SectionMain/Text.jsx'
 import { CVContact } from './components/SectionMain/CVContact.jsx'
@@ -31,7 +33,10 @@ function App() {
 
   return (
     <>
-      <SectionMain>
+      <Navbar/>
+      <SectionMain
+        navbar = <Navbar/>
+      >
         <Text
           divideLine = <DivideLine/>
           cvContact = <CVContact/>

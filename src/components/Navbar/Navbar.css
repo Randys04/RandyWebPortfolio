@@ -1,0 +1,50 @@
+@import 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap';
+
+#portfolio-navbar{
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#portfolio-navbar ul{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 50px;
+  padding: 0;
+}
+
+#portfolio-navbar ul li{
+  color: white;
+}
+
+#portfolio-navbar ul a {
+  text-decoration: none;
+  border-bottom: solid 4px transparent;
+  transition: 0.7s;
+}
+
+#portfolio-navbar ul a:hover{
+  text-decoration: none;
+  border-bottom: solid 4px white;
+  transition: 0.5s;
+}
+
+@media (max-width: 540px){
+  #portfolio-navbar{
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0;
+    font-size: 12px;
+
+  }
+  #portfolio-navbar ul{
+    gap: 36px;
+  }
+}
