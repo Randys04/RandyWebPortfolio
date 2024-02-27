@@ -15,6 +15,9 @@ import { SkillCard } from './components/SectionSkills/SkillCard.jsx'
 import { SectionProjects } from './components/SectionProjects/SectionProjects.jsx'
 import { ProjectCard } from './components/SectionProjects/ProjectCard.jsx'
 
+import { SectionContactMe } from './components/SectionContactMe/SectionContactMe.jsx'
+import { ContactForm } from './components/SectionContactMe/ContactForm.jsx'
+
 import { PortfolioBody } from './components/PortfolioBody.jsx'
 import { Title } from './components/Title.jsx'
 
@@ -72,6 +75,12 @@ function App() {
         >
 
         </SectionProjects>
+        <SectionContactMe
+          title = <Title titleText={"Contact Me"}/>
+          form = <ContactForm/>
+        >
+
+        </SectionContactMe>
       </PortfolioBody>
       
     </>

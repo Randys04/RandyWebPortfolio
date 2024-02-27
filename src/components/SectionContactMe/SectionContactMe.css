@@ -1,0 +1,26 @@
+#section-contact-me{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-container{
+	border: solid 4px transparent;
+	width: 500px;
+	height: min-content;
+	background-color: #0c153f	;
+	padding: 20px;
+}
+
+@media (max-width: 510px){
+  .form-container{
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
