@@ -1,0 +1,15 @@
+@import 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap';
+
+#footer{
+  margin-top: 50px;
+  background-color: #0c153f;
+}
+
+.copy-r{
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+}

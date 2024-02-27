@@ -20,6 +20,8 @@ import { ProjectCard } from './components/SectionProjects/ProjectCard.jsx'
 import { SectionContactMe } from './components/SectionContactMe/SectionContactMe.jsx'
 import { ContactForm } from './components/SectionContactMe/ContactForm.jsx'
 
+import {Footer} from './components/Footer/Footer.jsx'
+
 import { PortfolioBody } from './components/PortfolioBody.jsx'
 import { Title } from './components/Title.jsx'
 
@@ -86,6 +88,7 @@ function App() {
         >
 
         </SectionContactMe>
+        <Footer/>
       </PortfolioBody>
       
     </>
