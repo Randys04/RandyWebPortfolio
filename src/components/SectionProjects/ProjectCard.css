@@ -1,0 +1,90 @@
+@import 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap';
+
+.project-card-main{
+  height: 460px;
+  width: 320px;
+  background-color: #0c153f;
+  font-family: "Raleway", sans-serif;
+  padding: 6px 0;
+  box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.div-project-name h3{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.div-project-images{
+  margin: 14px;
+  height: 136.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  overflow-y: auto;
+}
+
+.div-project-images::-webkit-scrollbar {
+  width: 7px;
+  background-color: #182a60;
+}
+.div-project-images::-webkit-scrollbar-thumb{
+  background-color: white;
+}
+
+.project-images{
+  height: 100%;
+}
+
+.div-project-description{
+  background-color: #182a60;
+  height: 150px;
+  margin: 14px;
+  padding: 8px;
+}
+
+.div-project-description p{
+  font-weight: 200;
+  font-size: 12px;
+  text-align: left;
+}
+
+.div-project-links{
+  background-color: aqua;
+  margin: 14px;
+  padding: 0 40px;
+  background-color: #182a60;
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.div-project-links button{
+  background-color: #0c153f;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 11px;
+  border: none;
+  height: 24px;
+  width: 84px;
+  border: solid 0.5px transparent;
+  transition: 1s; 
+  border-radius: 2px;
+}
+
+.div-project-links button:hover{
+  /* border: solid 1px white; */
+  background-color: #ffffff;
+  font-weight: 500;
+  color: #0c153f;
+  transition: 1s;
+  cursor: pointer;
+}

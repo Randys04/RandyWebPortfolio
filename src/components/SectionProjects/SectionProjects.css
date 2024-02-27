@@ -1,0 +1,22 @@
+#section-projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container{
+  width: 800px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, 320px);
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 900px){
+  .projects-container{
+    width: 90%;
+    justify-content: center;
+  }
+}

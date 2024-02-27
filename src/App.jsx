@@ -12,6 +12,9 @@ import { Photo } from './components/SectionAboutMe/Photo.jsx'
 import { SectionSkills } from './components/SectionSkills/SectionSkills.jsx'
 import { SkillCard } from './components/SectionSkills/SkillCard.jsx'
 
+import { SectionProjects } from './components/SectionProjects/SectionProjects.jsx'
+import { ProjectCard } from './components/SectionProjects/ProjectCard.jsx'
+
 import { PortfolioBody } from './components/PortfolioBody.jsx'
 import { Title } from './components/Title.jsx'
 
@@ -58,6 +61,17 @@ function App() {
         >
 
         </SectionSkills>
+        <SectionProjects
+          title = <Title titleText={"My Projects"}/>
+          project1 = <ProjectCard  
+                        projectName={"Tasks Project"} 
+                        description={"API developed with C# and .NET in which object-relational mapping (ORM) using Entity Framework was employed to interact with the database, enabling migrations and operations such as retrieving, storing, updating, and deleting data through EF."}/>
+          project2 = <ProjectCard  
+                        projectName={"Tasks Project"} 
+                        description={"API developed with C# and .NET in which object-relational mapping (ORM) using Entity Framework was employed to interact with the database, enabling migrations and operations such as retrieving, storing, updating, and deleting data through EF."}/>
+        >
+
+        </SectionProjects>
       </PortfolioBody>
       
     </>
