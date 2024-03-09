@@ -1,27 +1,40 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./ContactForm.css";
 
 function ContactForm(){
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_m5gx3r8', 'template_5cvacn2', form.current, {
+        publicKey: 'qmo6Kj-UNHWftCs4D',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
 	return (
 		<>
-      <form className="contact-form">
-        <div className="form-name-div form-div">
-          <label for="name" className="form-labels">Name</label>
-          <input id="input-name" className="form-inputs name-input" type="text" name="name" />
-        </div>
-        
-        <div className="form-email-div form-div">
-          <label for="email" className="form-labels">Email</label>
-          <input id="input-email" className="form-inputs email-input" type="text" name="email" />
-        </div>
-        
-        <div className="form-message-div form-div">
-          <label for="message" className="form-labels">Message</label>
-          <textarea id="input-message" className="form-inputs message-input" type="text" name="message" />
-        </div>
-        
+      <form ref={form} onSubmit={sendEmail} className='contact-form'>
+        <label className='label-name form-labels'>Name</label>
+        <input type="text" name="user_name" className='form-inputs'/>
 
-        <input type="submit" className="form-btn" value="Send message"></input>
+        <label className='label-email form-labels'>Email</label>
+        <input type="email" name="user_email" className='form-inputs'/>
+
+        <label className='label-message form-labels'>Message</label>
+        <textarea name="message" className='form-inputs message-input'/>
+
+        <input type="submit" value="Send" className='form-btn'/>
       </form>
     </>
 	);
