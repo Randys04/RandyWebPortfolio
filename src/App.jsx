@@ -32,6 +32,34 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const taskProjecImgs = [
+    "/public/TasksProjImgs/TasksImg1.png",
+    "/public/TasksProjImgs/TasksImg2.png",
+    "/public/TasksProjImgs/TasksImg3.png",
+    "/public/TasksProjImgs/TasksImg4.png",
+    "/public/TasksProjImgs/TasksImg5.png",
+  ]
+  const rsRestaurantImgs = [
+    "/public/TasksProjImgs/TasksImg1.png",
+    "/public/TasksProjImgs/TasksImg2.png",
+    "/public/TasksProjImgs/TasksImg3.png",
+    "/public/TasksProjImgs/TasksImg4.png",
+    "/public/TasksProjImgs/TasksImg5.png",
+  ]
+
+  const rsRestaurantTech = [
+    "/public/TecnologiesImgs/csharp.svg",
+    "/public/TecnologiesImgs/dotnet.jpg",
+    "/public/TecnologiesImgs/html.svg",
+    "/public/TecnologiesImgs/microsoft-sql-server.svg",
+  ]
+
+  const taskProjectTech = [
+    "/public/TecnologiesImgs/html.svg",
+    "/public/TecnologiesImgs/css.svg",
+    "/public/TecnologiesImgs/javascript.svg",
+    "/public/TecnologiesImgs/react-2.svg",
+  ]
 
   return (
     <>
@@ -75,10 +103,16 @@ function App() {
           title = <Title titleText={"My Projects"}/>
           project1 = <ProjectCard  
                         projectName={"Tasks Project"} 
-                        description={"API developed with C# and .NET in which object-relational mapping (ORM) using Entity Framework was employed to interact with the database, enabling migrations and operations such as retrieving, storing, updating, and deleting data through EF."}/>
+                        description={"This is a website where you can create, delete, filter and mark your tasks as done or not. This project is built with React and uses LocalStorage to store the data."}
+                        images = {taskProjecImgs}
+                        techImages = {taskProjectTech}
+                        />
           project2 = <ProjectCard  
-                        projectName={"Tasks Project"} 
-                        description={"API developed with C# and .NET in which object-relational mapping (ORM) using Entity Framework was employed to interact with the database, enabling migrations and operations such as retrieving, storing, updating, and deleting data through EF."}/>
+                        projectName={"RS Restaurant"} 
+                        description={"Web project developed with .NET technologies, this project is a CRUD system for a restaurant. The frontend was developed with .NET technology using the MVC architecture pattern and an ORM was used for data management. For the API a Restfull API was developed using ASP.NET core."}
+                        images = {taskProjecImgs}
+                        techImages = {rsRestaurantTech}
+                        />
         >
 
         </SectionProjects>
