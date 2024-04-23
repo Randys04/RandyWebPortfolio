@@ -40,11 +40,11 @@ function App() {
     "/public/TasksProjImgs/TasksImg5.png",
   ]
   const rsRestaurantImgs = [
-    "/public/TasksProjImgs/TasksImg1.png",
-    "/public/TasksProjImgs/TasksImg2.png",
-    "/public/TasksProjImgs/TasksImg3.png",
-    "/public/TasksProjImgs/TasksImg4.png",
-    "/public/TasksProjImgs/TasksImg5.png",
+    "/public/RestaurantProjImgs/RestaurantImg1.png",
+    "/public/RestaurantProjImgs/RestaurantImg2.png",
+    "/public/RestaurantProjImgs/RestaurantImg3.png",
+    "/public/RestaurantProjImgs/RestaurantImg4.png",
+    "/public/RestaurantProjImgs/RestaurantImg5.png",
   ]
 
   const rsRestaurantTech = [
@@ -106,12 +106,16 @@ function App() {
                         description={"This is a website where you can create, delete, filter and mark your tasks as done or not. This project is built with React and uses LocalStorage to store the data."}
                         images = {taskProjecImgs}
                         techImages = {taskProjectTech}
+                        urlCode={""}
+                        urlDemo={"https://voluble-crostata-2422c4.netlify.app/"}
                         />
           project2 = <ProjectCard  
                         projectName={"RS Restaurant"} 
                         description={"Web project developed with .NET technologies, this project is a CRUD system for a restaurant. The frontend was developed with .NET technology using the MVC architecture pattern and an ORM was used for data management. For the API a Restfull API was developed using ASP.NET core."}
-                        images = {taskProjecImgs}
+                        images = {rsRestaurantImgs}
                         techImages = {rsRestaurantTech}
+                        urlCode={"https://github.com/Randys04/RS-Restaurant"}
+                        urlDemo={""}
                         />
         >
 

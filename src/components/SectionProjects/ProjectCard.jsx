@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectCard.css";
 
-function ProjectCard({projectName, images, techImages, description}){
+function ProjectCard({projectName, images, techImages, description, urlCode, urlDemo}){
 	return (
 		<div className="project-card-main">
 			<div className="div-project-name">
@@ -21,11 +21,12 @@ function ProjectCard({projectName, images, techImages, description}){
         ))}
 			</div>
 			<div className="div-project-links">
-				<a href="https://voluble-crostata-2422c4.netlify.app/" target="_blank">
-					<button>Live Demo</button>
+				<a href={urlDemo} target="_blank">
+					<button disabled={!urlDemo}>Live Demo</button>
 				</a>
-				<a>
-					<button>Check Code</button>
+				
+				<a href={urlCode} target="_blank">
+					<button disabled={!urlCode}>Check Code</button>
 				</a>
 
 			</div>
