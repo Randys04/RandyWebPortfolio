@@ -6,7 +6,7 @@ function CVContact(){
 		<>
 			<div>
 				
-				<a className="link-download" href="/public/MyCV/CV_Randy_Moya.pdf" download="CV_Randy_Moya">
+				<a className="link-download" href="/MyCV/CV_Randy_Moya.pdf" download="CV_Randy_Moya">
 					<button className="cv-btn">
 						<img/>
 						Download my CV

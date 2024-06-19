@@ -33,96 +33,96 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const taskProjecImgs = [
-    "/public/TasksProjImgs/TasksImg1.png",
-    "/public/TasksProjImgs/TasksImg2.png",
-    "/public/TasksProjImgs/TasksImg3.png",
-    "/public/TasksProjImgs/TasksImg4.png",
-    "/public/TasksProjImgs/TasksImg5.png",
+    "/TasksProjImgs/TasksImg1.png",
+    "/TasksProjImgs/TasksImg2.png",
+    "/TasksProjImgs/TasksImg3.png",
+    "/TasksProjImgs/TasksImg4.png",
+    "/TasksProjImgs/TasksImg5.png",
   ]
   const rsRestaurantImgs = [
-    "/public/RestaurantProjImgs/RestaurantImg1.png",
-    "/public/RestaurantProjImgs/RestaurantImg2.png",
-    "/public/RestaurantProjImgs/RestaurantImg3.png",
-    "/public/RestaurantProjImgs/RestaurantImg4.png",
-    "/public/RestaurantProjImgs/RestaurantImg5.png",
+    "/RestaurantProjImgs/RestaurantImg1.png",
+    "/RestaurantProjImgs/RestaurantImg2.png",
+    "/RestaurantProjImgs/RestaurantImg3.png",
+    "/RestaurantProjImgs/RestaurantImg4.png",
+    "/RestaurantProjImgs/RestaurantImg5.png",
   ]
 
   const rsRestaurantTech = [
-    "/public/TecnologiesImgs/csharp.svg",
-    "/public/TecnologiesImgs/dotnet.jpg",
-    "/public/TecnologiesImgs/html.svg",
-    "/public/TecnologiesImgs/microsoft-sql-server.svg",
+    "/TecnologiesImgs/csharp.svg",
+    "/TecnologiesImgs/dotnet.jpg",
+    "/TecnologiesImgs/html.svg",
+    "/TecnologiesImgs/microsoft-sql-server.svg",
   ]
 
   const taskProjectTech = [
-    "/public/TecnologiesImgs/html.svg",
-    "/public/TecnologiesImgs/css.svg",
-    "/public/TecnologiesImgs/javascript.svg",
-    "/public/TecnologiesImgs/react-2.svg",
+    "/TecnologiesImgs/html.svg",
+    "/TecnologiesImgs/css.svg",
+    "/TecnologiesImgs/javascript.svg",
+    "/TecnologiesImgs/react-2.svg",
   ]
 
   return (
     <>
       <Navbar/>
       <SectionMain
-        navbar = <Navbar/>
+        navbar = {<Navbar/>}
       >
         <Text
-          divideLine = <DivideLine/>
-          cvContact = <CVContact/>
+          divideLine = {<DivideLine/>}
+          cvContact = {<CVContact/>}
         >
         </Text>
       </SectionMain>
       <PortfolioBody>
         <SectionAboutMe
-          title = <Title titleText={"About Me"}/>
-          photo = <Photo/>
-          aboutMeTxt = <AboutMeTxt
+          title = {<Title titleText={"About Me"}/>}
+          photo = {<Photo/>}
+          aboutMeTxt = {<AboutMeTxt
                           linkedinBtn = <LinkedinBtn/>
                           instagramBtn = <InstagramBtn/>
                           githubBtn = <GithubBtn/>
-                        />
+                        />}
         >  
         </SectionAboutMe>
         <SectionSkills
-          title = <Title titleText={"Skills"}/>
-          skillCard1 = <SkillCard urlImg={"/public/TecnologiesImgs/javascript.svg"} skillName={"JavaScript"}/>
-          skillCard2 = <SkillCard urlImg={"/public/TecnologiesImgs/html.svg"} skillName={"HTML"}/>
-          skillCard3 = <SkillCard urlImg={"/public/TecnologiesImgs/css.svg"} skillName={"CSS"}/>
-          skillCard4 = <SkillCard urlImg={"/public/TecnologiesImgs/csharp.svg"} skillName={"C#"}/>
-          skillCard5 = <SkillCard urlImg={"/public/TecnologiesImgs/dotnet.jpg"} skillName={"Microsoft .NET"}/>
-          skillCard6 = <SkillCard urlImg={"/public/TecnologiesImgs/microsoft-sql-server.svg"} skillName={" SQL Server"}/>
-          skillCard7 = <SkillCard urlImg={"/public/TecnologiesImgs/git.svg"} skillName={"Git"}/>
-          skillCard8 = <SkillCard urlImg={"/public/TecnologiesImgs/mariadb.svg"} skillName={"MariaDB"}/>
-          skillCard9 = <SkillCard urlImg={"/public/TecnologiesImgs/php.svg"} skillName={"PHP"}/>
-          skillCard10 = <SkillCard urlImg={"/public/TecnologiesImgs/bootstrap.svg"} skillName={"Bootstrap"}/>
+          title = {<Title titleText={"Skills"}/>}
+          skillCard1 = {<SkillCard urlImg={"/public/TecnologiesImgs/javascript.svg"} skillName={"JavaScript"}/>}
+          skillCard2 = {<SkillCard urlImg={"/public/TecnologiesImgs/html.svg"} skillName={"HTML"}/>}
+          skillCard3 = {<SkillCard urlImg={"/public/TecnologiesImgs/css.svg"} skillName={"CSS"}/>}
+          skillCard4 = {<SkillCard urlImg={"/public/TecnologiesImgs/csharp.svg"} skillName={"C#"}/>}
+          skillCard5 = {<SkillCard urlImg={"/public/TecnologiesImgs/dotnet.jpg"} skillName={"Microsoft .NET"}/>}
+          skillCard6 = {<SkillCard urlImg={"/public/TecnologiesImgs/microsoft-sql-server.svg"} skillName={" SQL Server"}/>}
+          skillCard7 = {<SkillCard urlImg={"/public/TecnologiesImgs/git.svg"} skillName={"Git"}/>}
+          skillCard8 = {<SkillCard urlImg={"/public/TecnologiesImgs/mariadb.svg"} skillName={"MariaDB"}/>}
+          skillCard9 = {<SkillCard urlImg={"/public/TecnologiesImgs/php.svg"} skillName={"PHP"}/>}
+          skillCard10 = {<SkillCard urlImg={"/public/TecnologiesImgs/bootstrap.svg"} skillName={"Bootstrap"}/>}
         >
 
         </SectionSkills>
         <SectionProjects
-          title = <Title titleText={"My Projects"}/>
-          project1 = <ProjectCard  
+          title = {<Title titleText={"My Projects"}/>}
+          project1 = {<ProjectCard  
                         projectName={"Tasks Project"} 
                         description={"This is a website where you can create, delete, filter and mark your tasks as done or not. This project is built with React and uses LocalStorage to store the data."}
                         images = {taskProjecImgs}
                         techImages = {taskProjectTech}
                         urlCode={""}
                         urlDemo={"https://voluble-crostata-2422c4.netlify.app/"}
-                        />
-          project2 = <ProjectCard  
+                        />}
+          project2 = {<ProjectCard  
                         projectName={"RS Restaurant"} 
                         description={"Web project developed with .NET , it is a CRUD system for a restaurant. The frontend was developed with .NET using the MVC architecture pattern and the ORM entity framework. For the API a Restfull API was developed using ASP.NET core."}
                         images = {rsRestaurantImgs}
                         techImages = {rsRestaurantTech}
                         urlCode={"https://github.com/Randys04/RS-Restaurant"}
                         urlDemo={""}
-                        />
+                        />}
         >
 
         </SectionProjects>
         <SectionContactMe
-          title = <Title titleText={"Contact Me"}/>
-          form = <ContactForm/>
+          title = {<Title titleText={"Contact Me"}/>}
+          form = {<ContactForm/>}
         >
 
         </SectionContactMe>

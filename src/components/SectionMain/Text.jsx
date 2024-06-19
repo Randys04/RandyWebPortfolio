@@ -1,7 +1,7 @@
 import React from "react";
 import "./Text.css";
 
-function Text({divideLine, cvContact, linkedinBtn, instagramBtn, githubBtn}){
+function Text({divideLine, cvContact}){
   return(
     <>
       
@@ -23,12 +23,6 @@ function Text({divideLine, cvContact, linkedinBtn, instagramBtn, githubBtn}){
         <div className="cvcontact-div">
           {cvContact}
         </div>
-
-          {/* <div className="div-social-media">
-            {linkedinBtn}
-            {githubBtn}
-            {instagramBtn}
-          </div> */}
         
       </div>
       
