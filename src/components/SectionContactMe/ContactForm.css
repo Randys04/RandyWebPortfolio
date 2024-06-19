@@ -14,6 +14,7 @@
   justify-content: left;
   text-align: left;
   font-family: "Raleway", sans-serif;
+  font-size: 20px;
   letter-spacing: 1px;
   padding-top: 4px;
   padding-left: 4px;
@@ -33,6 +34,7 @@
   outline: none;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
+  font-size: 15px;
   letter-spacing: 1px;
   border-radius: 2px;
   border: solid 1px transparent;
@@ -49,6 +51,14 @@
   resize: none;
 }
 
+.message-input::-webkit-scrollbar {
+  width: 2px;
+  background-color: #182a60;
+}
+.message-input::-webkit-scrollbar-thumb{
+  background-color: white;
+}
+
 .form-btn{
   height: 40px;
   width: 156px;
@@ -56,7 +66,7 @@
   font-family: "Raleway", sans-serif;
   letter-spacing: 1px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   border: none;
   border-radius: 2px;
   color: white;
@@ -69,4 +79,21 @@
   color: #182a60;
   transition: 0.5s;
   cursor: pointer;
+}
+
+@media (max-width: 610px){
+
+  .form-labels{
+    font-size: 17px;
+  }
+
+  .form-inputs{
+    font-size: 13px;
+  }
+
+  .form-btn{
+
+    font-size: 17px;
+
+  }
 }

@@ -6,7 +6,7 @@ function Photo(){
     <>
 			<div className="photo-main-div">
 				<div className="photo-div">
-					<img className="img-photo" src="/public/myPhoto.jpg" alt="my/photo" />
+					<img className="img-photo" src="/public/myPhoto4.jpg" alt="my/photo" />
 				</div>
 			</div>
     </>

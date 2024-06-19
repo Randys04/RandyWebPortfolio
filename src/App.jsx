@@ -111,7 +111,7 @@ function App() {
                         />
           project2 = <ProjectCard  
                         projectName={"RS Restaurant"} 
-                        description={"Web project developed with .NET technologies, this project is a CRUD system for a restaurant. The frontend was developed with .NET technology using the MVC architecture pattern and an ORM was used for data management. For the API a Restfull API was developed using ASP.NET core."}
+                        description={"Web project developed with .NET , it is a CRUD system for a restaurant. The frontend was developed with .NET using the MVC architecture pattern and the ORM entity framework. For the API a Restfull API was developed using ASP.NET core."}
                         images = {rsRestaurantImgs}
                         techImages = {rsRestaurantTech}
                         urlCode={"https://github.com/Randys04/RS-Restaurant"}

@@ -9,7 +9,7 @@
 	line-height: 2.5em;
 	overflow: hidden;
 	margin: 20px;
-	font-size: 17px;
+	font-size: 20px;
 	font-family: "Raleway", sans-serif;
 	z-index: 1;
 	color: var(--color);
@@ -21,8 +21,8 @@
 	position: absolute;
 	content: "";
 	background: var(--color);
-	width: 240px;
-	height: 180px;
+	width: 265px;
+	height: 160px;
 	z-index: -1;
 	border-radius: 50%;
 }
@@ -56,7 +56,7 @@
 	line-height: 2.5em;
 	overflow: hidden;
 	margin: 20px;
-	font-size: 17px;
+	font-size: 20px;
 	font-family: "Raleway", sans-serif;
 	z-index: 1;
 	color: white;
@@ -68,8 +68,8 @@
 	position: absolute;
 	content: "";
 	background: white;
-	width: 240px;
-	height: 180px;
+	width: 265px;
+	height: 160px;
 	z-index: -1;
 	font-family: "Raleway", sans-serif;
 	border-radius: 50%;
@@ -89,4 +89,15 @@
 .cv-btn:hover::before {
 	top: -30px;
 	left: -30px;
+}
+
+@media (max-width: 980px){
+	
+	.cv-btn {
+		font-size: 17px;
+	}
+	
+	.contact-btn{
+		font-size: 17px;
+	}
 }

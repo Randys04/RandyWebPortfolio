@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 .div-project-name h3{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin: 0;
 }
@@ -43,15 +43,19 @@
 
 .div-project-description{
   background-color: #182a60;
-  height: 150px;
+  height: 200px;
   margin: 14px;
   padding: 8px;
+  align-content: center;
 }
 
 .div-project-description p{
-  font-weight: 200;
-  font-size: 12px;
+  font-weight: 100;
+  font-size: 15px;
+  margin: 0;
   text-align: left;
+  letter-spacing: 1px;
+  line-height: 22px;
 }
 
 .div-project-technologies{
@@ -70,7 +74,7 @@
 .div-project-links{
   background-color: aqua;
   margin: 14px;
-  padding: 0 40px;
+  padding: 0 18px;
   background-color: #182a60;
   height: 50px;
 
@@ -82,11 +86,11 @@
 .div-project-links button{
   background-color: #0c153f;
   font-family: "Raleway", sans-serif;
-  font-weight: 200;
-  font-size: 11px;
+  font-weight: 100;
+  font-size: 15px;
   border: none;
   height: 24px;
-  width: 84px;
+  width: 115px;
   border: solid 0.5px transparent;
   transition: 1s; 
   border-radius: 2px;
@@ -99,4 +103,20 @@
   color: #0c153f;
   transition: 1s;
   cursor: pointer;
+}
+
+@media (max-width: 610px){
+
+  .div-project-name h3{
+    font-size: 17px;
+  }
+
+  .div-project-description p{
+    font-size: 13px;
+  }
+
+  .div-project-links button{
+    font-size: 13px;
+  }
+
 }
