@@ -38,11 +38,15 @@
   border-radius: 2px;
   border: solid 1px transparent;
   transition: 0.7s;
+
 }
 
 .form-inputs:focus{
   transition: 0.7s;
   border: solid 1px white;
+  box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
 }
 
 .error-labels{
@@ -133,5 +137,5 @@
   .error-sending-message{
     font-size: 13px;
   }
-  
+
 }

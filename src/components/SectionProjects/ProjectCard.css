@@ -2,7 +2,7 @@
 
 .project-card-main{
   height: auto;
-  width: 320px;
+  width: 400px;
   background-color: #0c153f;
   font-family: "Raleway", sans-serif;
   padding: 6px 0;
@@ -13,6 +13,13 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.project-card-sections{
+  box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
+}
+
 .div-project-name h3{
   font-size: 20px;
   font-weight: 600;
@@ -21,7 +28,7 @@
 
 .div-project-images{
   margin: 14px;
-  height: 136.5px;
+  height: 170px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -119,4 +126,16 @@
     font-size: 13px;
   }
 
+  .project-card-main{
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 470px){
+  .project-card-main{
+    width: 100%;
+  }
+  .div-project-images{
+    height: 36vw;
+  }
 }
