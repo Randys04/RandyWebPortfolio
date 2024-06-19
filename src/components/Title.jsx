@@ -3,7 +3,7 @@ import "./Title.css"
 
 function Title({titleText}){
 	return(
-		<div class="sections-title">
+		<div className="sections-title">
 			<h2>{titleText}</h2>
 		</div>
 	)

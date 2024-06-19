@@ -3,7 +3,7 @@ import "./AboutMeTxt.css"
 
 function AboutMeTxt({linkedinBtn,instagramBtn, githubBtn}){
 	return(
-		<div class="about-me-div-main">
+		<div className="about-me-div-main">
 			<div className="my-description">
 				<h3 className="hello-about-me">Hello, I am <span className="my-name">Randy Steven Moya Mora</span></h3>
 				<p className="i-am-text">
