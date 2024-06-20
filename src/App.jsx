@@ -47,6 +47,13 @@ function App() {
     "/RestaurantProjImgs/RestaurantImg5.png",
   ]
 
+  const bookStoreImgs = [
+    "/BookStoreProjImgs/BookStore1.png",
+    "/BookStoreProjImgs/BookStore2.png",
+    "/BookStoreProjImgs/BookStore3.png",
+    "/BookStoreProjImgs/BookStore4.png",
+  ]
+
   const rsRestaurantTech = [
     "/TecnologiesImgs/csharp.svg",
     "/TecnologiesImgs/dotnet.jpg",
@@ -59,6 +66,12 @@ function App() {
     "/TecnologiesImgs/css.svg",
     "/TecnologiesImgs/javascript.svg",
     "/TecnologiesImgs/react-2.svg",
+  ]
+
+  const bookStoreProjectTech = [
+    "/TecnologiesImgs/csharp.svg",
+    "/TecnologiesImgs/dotnet.jpg",
+    "/TecnologiesImgs/html.svg",
   ]
 
   return (
@@ -115,6 +128,14 @@ function App() {
                         images = {rsRestaurantImgs}
                         techImages = {rsRestaurantTech}
                         urlCode={"https://github.com/Randys04/RS-Restaurant"}
+                        urlDemo={""}
+                        />}
+          project3 = {<ProjectCard  
+                        projectName={"Book Store"} 
+                        description={"This book management system for libraries, built with .NET and C# using the MVC architecture, allows users to efficiently manage books by adding, updating, deleting, and querying. It also includes category management for better organization and uses Entity Framework (EF) for robust data management."}
+                        images = {bookStoreImgs}
+                        techImages = {bookStoreProjectTech}
+                        urlCode={"https://github.com/Randys04/AppBookStore"}
                         urlDemo={""}
                         />}
         >
